@@ -1,11 +1,43 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import AppHeader from './componentes/AppHeader.vue'
+import LoginForm from './componentes/LoginForm.vue'
+import AppFooter from './componentes/AppFooter.vue'
+</script>
 
 <template>
-  <h1>You did it!</h1>
-  <p>
-    Visit <a href="https://vuejs.org/" target="_blank" rel="noopener">vuejs.org</a> to read the
-    documentation
-  </p>
+  <div class="gengar-app">
+    <AppHeader />
+    <main class="main-container">
+      <LoginForm />
+    </main>
+    <AppFooter />
+  </div>
 </template>
 
-<style scoped></style>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #07030d;
+  color: #f3e8ff;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.gengar-app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+</style>
