@@ -8,7 +8,7 @@ import AppFooter from './componentes/AppFooter.vue'
   <div class="gengar-app">
     <AppHeader />
     <main class="main-container">
-      <LoginForm />
+      <RouterView />
     </main>
     <AppFooter />
   </div>

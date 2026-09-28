@@ -85,11 +85,10 @@ const fillDemo = () => {
 
       <button type="submit" class="submit-btn" :disabled="isSubmitting">
         {{ isSubmitting ? 'Entrando...' : 'Entrar 👻' }}
+        <a href="AppHeader2"></a>
       </button>
 
-      <button type="button" class="demo-btn" @click="fillDemo">
-        Preencher Dados
-      </button>
+    
     </form>
 
     <div v-if="submittedPayload" class="json-box">
